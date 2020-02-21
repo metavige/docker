@@ -7,7 +7,8 @@ mkdir -p $REPO_NAME
 cat > "$REPO_NAME/Makefile" <<EOF
 include ../Makefile
 
-USERNAME=metavige
+# REGISTRY_HOST=docker.io
+# USERNAME=metavige
 
 pre-build:
 	@echo do some stuff before the docker build
