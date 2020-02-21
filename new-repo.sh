@@ -24,3 +24,16 @@ cat > "$REPO_NAME/Dockerfile" <<EOF
 FROM busybox
 
 EOF
+
+cat > "$REPO_NAME/.dockerignore" <<EOF
+**/.git
+**/.DS_Store
+**/node_modules
+*.log
+Dockerfile*
+docker-compose*
+.dockerignore
+.git
+.gitignore
+.vscode
+EOF
